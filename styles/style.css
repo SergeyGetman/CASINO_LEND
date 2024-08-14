@@ -1,0 +1,15 @@
+.content {
+  height: 900px;
+}
+.content-head {
+  width: 100%;
+}
+
+.content__details {
+  display: flex;
+  justify-content: space-between;
+}
+.content__details-title {
+  background-image: url("../assets/images/svg/circle.svg");
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */

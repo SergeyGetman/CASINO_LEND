@@ -1,0 +1,22 @@
+
+.content {
+    height: 900px;
+
+
+    &-head {
+        width: 100%;
+    }
+}
+
+
+
+.content__details {
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+
+        background-image: url("../assets/images/svg/circle.svg");
+        background-repeat: no-repeat;
+    }
+}

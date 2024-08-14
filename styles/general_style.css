@@ -1,7 +1,10 @@
 body {
     background-color: rgb(143, 143, 189);
-    background-image: url("./assets/images/background_image.png");
+    background-image: url("../assets/images/background_image.png");
 }
+
+
+
 
 .wiev {
     display: flex;
