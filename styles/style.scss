@@ -12,14 +12,16 @@
     display: flex;
     justify-content: space-between;
 
+
     &-title__circle{
         position: relative;
         width: 82px;
         height: 82px;
+        top: 32px;
 
         &-letter  {
-            position: absolute; /* Абсолютное позиционирование элемента с буквой */
-            top: 50%; /* Размещаем по центру */
+            position: absolute; 
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -29,6 +31,23 @@
         height: auto;
     }
 
+
+    &_title-centr{
+        display: flex;
+        margin: 30px 0px;
+
+        &_white-title{
+            margin-left: 10px;
+        }
+     
+
+    }
+}
+
+.content__details_center-block {
+    width: 470px;
+    display: flex;
+    grid-gap: 20px;
 }
 
 .content-down {
@@ -53,6 +72,8 @@
         height: 100vh; 
         position: relative; 
     }
+
+
 }
 
 .content__centr-centr__spin {
