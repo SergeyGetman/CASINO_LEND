@@ -6,12 +6,3 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
-
-
-
-.wiev {
-    display: flex;
-    justify-content: space-between;
-
-}
