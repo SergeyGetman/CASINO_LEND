@@ -1,6 +1,10 @@
 body {
-    background-color: rgb(143, 143, 189);
-    background-image: url("../assets/images/background_image.png");
+        height: 1000px;
+    background-image: url("../assets/images/background_image_M.jfif") ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
