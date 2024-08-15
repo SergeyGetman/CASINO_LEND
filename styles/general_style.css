@@ -6,3 +6,23 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+
+@keyframes rotateForHundred {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(170deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(170deg);
+ 
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

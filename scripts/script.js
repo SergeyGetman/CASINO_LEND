@@ -24,3 +24,19 @@ function showModal() {
     modalElement.show();
 }
 
+let counter = 0;
+
+function writeCircle() {
+  const img = document.getElementById("rotatingImage");
+
+  counter += 1;
+
+  counter === 1 ? img.style.animation = `rotateForHundred 3s ease-in-out forwards` : 
+                                      img.style.animation = `rotate 3s ease ${1}`;
+
+  console.log("counter", counter);
+
+  // img.addEventListener("animationend", () => {
+  //   img.style.animation = '';
+  // });
+}

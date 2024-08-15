@@ -83,6 +83,10 @@
   line-height: 110%; /* 33px */
   text-transform: uppercase;
 }
+.content__centr-btn:hover {
+  color: black;
+  background-color: white;
+}
 
 .content__centr-centr__spin {
   height: 100%;
