@@ -8,17 +8,27 @@
     }
 }
 
-
-
 .content__details {
     display: flex;
     justify-content: space-between;
 
-    &-title {
+    &-title__circle{
+        position: relative;
+        width: 82px;
+        height: 82px;
 
-        background-image: url("../assets/images/svg/circle.svg");
-        background-repeat: no-repeat;
+        &-letter  {
+            position: absolute; /* Абсолютное позиционирование элемента с буквой */
+            top: 50%; /* Размещаем по центру */
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
+    &-title__circle img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 .content-down {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .content {
   height: 900px;
 }
@@ -9,9 +10,20 @@
   display: flex;
   justify-content: space-between;
 }
-.content__details-title {
-  background-image: url("../assets/images/svg/circle.svg");
-  background-repeat: no-repeat;
+.content__details-title__circle {
+  position: relative;
+  width: 82px;
+  height: 82px;
+}
+.content__details-title__circle-letter {
+  position: absolute; /* Абсолютное позиционирование элемента с буквой */
+  top: 50%; /* Размещаем по центру */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content__details-title__circle img {
+  width: 100%;
+  height: auto;
 }
 
 .content-down {
