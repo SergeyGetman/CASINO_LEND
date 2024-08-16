@@ -15,7 +15,6 @@
 
 <body>
 
-    <!-- modal.html -->
     <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -33,7 +32,7 @@
                     <button type="button">E-posta ile</button>
                     <button type="button">Telefon ile</button>
                 </div>
-                <form class="row g-2" needs-validation>
+                <form class="row g-2" id="signupForm" needs-validation>
                     <div class="col-md-10" style="margin-left: 28px; text-align: left; color: black; font-weight: 700;">
                         <label for="validationCustom01" class="form-label">Email</label>
                         <input type="email" class="form-control" id="inputEmail4" required>
@@ -80,9 +79,8 @@
             </p>
         </div>
         <center>
-            <button type="button" class="btn btn-danger">CLOSE</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
         </center>
-
     </div>
     </div>
 
@@ -90,6 +88,13 @@
     <script>
         document.getElementById('signupForm').addEventListener('submit', function (e) {
             e.preventDefault();
+            const email = document.getElementById('inputEmail4').value;
+            const currency = document.getElementById('validationDefault04').value;
+            const password = document.getElementById('inputPassword6').value;
+
+            console.log('Email:', email);
+            console.log('Currency:', currency);
+            console.log('Password:', password);
 
             const phone = document.getElementById('phone').value;
             const validationMessage = document.getElementById('validationMessage');

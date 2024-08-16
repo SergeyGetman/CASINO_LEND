@@ -17,9 +17,8 @@
 
     <div>
 
-        <!-- <button id="showModalBtn" class="btn btn-primary">Show Modal</button>
-
-        <div id="modalContainer" class="modalContainer-show"></div> -->
+        <button id="showModalBtn" class="btn btn-primary" style="opacity: 0;">Show Modal</button>
+        <div id="modalContainer" class="modalContainer-show"></div>
         <script>
             document.getElementById('showModalBtn').addEventListener('click', function () {
                 fetch('modal.html')
@@ -27,6 +26,9 @@
                     .then(html => {
                         document.getElementById('modalContainer').innerHTML = html;
                         const modal = new bootstrap.Modal(document.getElementById('signInModal'));
+
+
+
                         modal.show();
                     })
                     .catch(error => {

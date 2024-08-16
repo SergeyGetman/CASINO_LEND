@@ -37,7 +37,6 @@ function showModal2() {
 
 
 
-
 function checkedValueSpin(spinCount) {
 
   switch (spinCount) {
@@ -46,6 +45,7 @@ function checkedValueSpin(spinCount) {
           break;
       case 2:
           showModal();
+          checCountForRedirectUser+=1;
           break;
       default:
           alert("This is impossible");
@@ -54,6 +54,7 @@ function checkedValueSpin(spinCount) {
 }
 
 	let counter = 0;
+  let timeStemp = 3000;
 
 	function writeCircle() {
 		const img = document.getElementById('rotatingImage');
@@ -63,12 +64,25 @@ function checkedValueSpin(spinCount) {
 
 	 	counter === 1
 			? (img.style.animation = `rotateForHundred 3s ease-in-out forwards`)
-			: (img.style.animation = `rotate 3s ease ${1}`);
+			: (img.style.animation = `rotate 3s ease ${1}`) && checCountForRedirectUser(counter);
 
       setTimeout(() => {
          checkedValueSpin(counter)
-      }, 3000)
-     
+         checCountForRedirectUser(counter);
+      }, timeStemp)
+
+
 	}
+
+  function checCountForRedirectUser(count){
+    console.log('count', count);
+    
+    if(count === 2){
+      setTimeout(() => {
+        document.getElementById('showModalBtn').click();
+      }, timeStemp)
+      
+    }
+  }
 
 

@@ -68,6 +68,7 @@
 .content__centr-btn {
   display: block;
   position: relative;
+  z-index: 999;
   margin: 50px auto;
   width: 350px;
   height: 88px;
