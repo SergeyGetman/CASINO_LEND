@@ -1,4 +1,4 @@
-function showModal() {
+function showModalFirstSpin() {
 	document.body.insertAdjacentHTML(
 		'beforeend',
 		`
@@ -17,7 +17,7 @@ function showModal() {
 	return modal.show();
 }
 
-function showModal2() {
+function showModalSecondSpin() {
 	document.body.insertAdjacentHTML(
 		'beforeend',
 		`
@@ -41,11 +41,10 @@ function checkedValueSpin(spinCount) {
 
   switch (spinCount) {
       case 1:
-          showModal2();
+        showModalSecondSpin();
           break;
       case 2:
-          showModal();
-          checCountForRedirectUser+=1;
+        showModalFirstSpin();
           break;
       default:
           alert("This is impossible");
@@ -64,7 +63,7 @@ function checkedValueSpin(spinCount) {
 
 	 	counter === 1
 			? (img.style.animation = `rotateForHundred 3s ease-in-out forwards`)
-			: (img.style.animation = `rotate 3s ease ${1}`) && checCountForRedirectUser(counter);
+			: (img.style.animation = `rotate 3s ease ${1}`);
 
       setTimeout(() => {
          checkedValueSpin(counter)
@@ -75,13 +74,11 @@ function checkedValueSpin(spinCount) {
 	}
 
   function checCountForRedirectUser(count){
-    console.log('count', count);
-    
     if(count === 2){
       setTimeout(() => {
         document.getElementById('showModalBtn').click();
       }, timeStemp)
-      
+        return;
     }
   }
 

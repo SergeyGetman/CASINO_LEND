@@ -51,8 +51,13 @@
 
 .content__centr {
   display: flex;
-  justify-content: space-between;
-  margin-top: 150px;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+  grid-gap: 12rem;
+  margin-top: 100px;
 }
 .content__centr-centr__spin {
   display: flex;
@@ -68,7 +73,6 @@
 .content__centr-btn {
   display: block;
   position: relative;
-  z-index: 999;
   margin: 50px auto;
   width: 350px;
   height: 88px;
@@ -87,6 +91,33 @@
 .content__centr-btn:hover {
   color: black;
   background-color: white;
+}
+.content__centr-right-side, .content__centr-left-side {
+  display: flex;
+}
+.content__centr-right-side pre {
+  position: absolute;
+  color: #e21f26;
+  margin-top: 30px;
+  left: 70px;
+  text-align: right;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%; /* 28.6px */
+  text-transform: uppercase;
+}
+.content__centr-left-side pre {
+  color: #e21f26;
+  position: absolute;
+  margin: 30px -2rem;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%; /* 28.6px */
+  text-transform: uppercase;
 }
 
 .content__centr-centr__spin {
