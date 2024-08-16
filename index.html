@@ -14,24 +14,27 @@
 
 <body>
 
-    <script>
 
-        // function checkedValueSpin(spinCount){
-        //     let counterShowModal = 0;
-        //     switch (spinCount) {
-        //     case 1: showModal();
-        //         break;
-        //     case 2: showModal();
-        //         break;
-        //     default: alert("this is imposible")
-        // }
-        // }
+    <div>
 
+        <!-- <button id="showModalBtn" class="btn btn-primary">Show Modal</button>
 
-
-
-    </script>
-
+        <div id="modalContainer" class="modalContainer-show"></div> -->
+        <script>
+            document.getElementById('showModalBtn').addEventListener('click', function () {
+                fetch('modal.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('modalContainer').innerHTML = html;
+                        const modal = new bootstrap.Modal(document.getElementById('signInModal'));
+                        modal.show();
+                    })
+                    .catch(error => {
+                        console.error('Error loading the modal:', error);
+                    });
+            });
+        </script>
+    </div>
     <div class="content">
         <section>
             <div class="content__details">
