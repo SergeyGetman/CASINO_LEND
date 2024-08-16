@@ -47,7 +47,7 @@ function checkedValueSpin(spinCount) {
         showModalFirstSpin();
           break;
       default:
-          alert("This is impossible");
+          alert("This is impossible, please refresh the page");
           break;
   }
 }
