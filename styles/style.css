@@ -1,5 +1,5 @@
 .content {
-  height: 1200px;
+  height: 900px;
 }
 .content-head {
   width: 100%;
@@ -41,7 +41,7 @@
 
 .content-down {
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 .content-down__images {
@@ -172,3 +172,102 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .content {
+    height: 100vh;
+  }
+  .content-head {
+    width: 100%;
+  }
+  .content__details {
+    display: block;
+    justify-content: center;
+  }
+  .content__details-title__circle {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+  }
+  .content__details-title__circle-letter {
+    font-size: 14px;
+  }
+  .content__details-title__circle img {
+    width: 100%;
+    height: auto;
+  }
+  .content__details_title-centr {
+    display: block;
+    margin: 20px 0;
+  }
+  .content__details_title-centr_white-title {
+    margin-left: 5px;
+  }
+  .content__details_center-block {
+    width: 100%;
+    display: block;
+    grid-gap: 10px;
+  }
+  .content-down {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  .content-down__images {
+    display: block;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .content__centr {
+    display: block;
+    flex-direction: column;
+    grid-gap: 2rem;
+    margin-top: 50px;
+  }
+  .content__centr-centr__spin {
+    height: 50vh;
+  }
+  .content__centr-centr__spin-arrow img {
+    height: 150px;
+    width: 150px;
+  }
+  .content__centr-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+  .content__centr-right-side, .content__centr-left-side {
+    display: block;
+  }
+  .content__centr-right-side pre, .content__centr-left-side pre {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .content__centr-centr__spin {
+    height: auto;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  .smaller {
+    width: 50px;
+    height: 50px;
+  }
+  .medium {
+    width: 100px;
+    height: 100px;
+  }
+  .larger {
+    width: 200px;
+    height: 200px;
+  }
+  .largest {
+    width: 250px;
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
