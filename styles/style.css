@@ -1,5 +1,5 @@
 .content {
-  height: 900px;
+  height: 1200px;
 }
 .content-head {
   width: 100%;
@@ -41,12 +41,13 @@
 
 .content-down {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 .content-down__images {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .content__centr {
@@ -73,7 +74,7 @@
 .content__centr-btn {
   display: block;
   position: relative;
-  margin: 50px auto;
+  margin: 130px auto;
   width: 350px;
   height: 88px;
   border-radius: 10px;
@@ -94,12 +95,14 @@
 }
 .content__centr-right-side, .content__centr-left-side {
   display: flex;
+  position: relative;
+  z-index: -1;
 }
 .content__centr-right-side pre {
   position: absolute;
   color: #e21f26;
   margin-top: 30px;
-  left: 70px;
+  right: 80px;
   text-align: right;
   font-family: Inter;
   font-size: 22px;
